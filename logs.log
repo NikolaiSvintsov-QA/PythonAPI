@@ -1,0 +1,5 @@
+2025-10-27 | ERROR | Error in test_get_books2 : Неверный статус код, ожидали 200, получили 200
+assert 200 == 201
+ +  where 200 = <Response [200]>.status_code
+2025-10-27 | INFO | test_get_books2 успешно выполнена с результатом: None
+2025-10-27 | INFO | test_get_books2 успешно выполнена с результатом: None

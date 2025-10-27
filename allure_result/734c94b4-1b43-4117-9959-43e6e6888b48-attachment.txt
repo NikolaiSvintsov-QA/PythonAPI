@@ -1,0 +1,15 @@
+[{'available': True, 'id': 1, 'name': 'The Russian', 'type': 'fiction'},
+ {'available': True, 'id': 3, 'name': 'The Vanishing Half', 'type': 'fiction'},
+ {'available': True,
+  'id': 4,
+  'name': 'The Midnight Library',
+  'type': 'fiction'},
+ {'available': True,
+  'id': 6,
+  'name': 'Viscount Who Loved Me',
+  'type': 'fiction'},
+ {'available': False, 'id': 2, 'name': 'Just as I Am', 'type': 'non-fiction'},
+ {'available': True, 'id': 5, 'name': 'Untamed', 'type': 'non-fiction'}]
+{'Content-Type': 'application/json', 'Content-Length': '417', 'Connection': 'keep-alive', 'Date': 'Mon, 27 Oct 2025 19:32:36 GMT', 'X-Amzn-Trace-Id': 'Root=1-68ffc8d4-05c7e21d38a456d55942a9a2;Parent=29334c26652c6901;Sampled=0;Lineage=1:9ee0f5ed:0', 'x-amzn-RequestId': '41ed1fde-0615-4aa1-a4f0-ea2e6c26b422', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token', 'x-amz-apigw-id': 'THxRUHHiIAMEmgQ=', 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS, PATCH', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 2b5c6697d9ea18b3dedca979cc312b8c.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'FRA50-P1', 'X-Amz-Cf-Id': 'JUdiJoWXkZwX2NdrCEbnw2slz9YBrDNJJdCIE2i_IRnDUVDNdXM7JQ=='}
+True
+'https://simple-books-api.click/books'
