@@ -9,7 +9,7 @@ def test_get_books():
     pprint(response.json())
     pprint(response.headers) #возвращает заголовки
     pprint(response.ok) # все что ниже 400
-    pprint(response.url )
+    pprint(response.url)
 
 
 
