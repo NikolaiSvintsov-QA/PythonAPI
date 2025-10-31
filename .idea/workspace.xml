@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99f3bab2-04d7-431a-acd1-1b954857ba61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_hw/lesson10_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_hw/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_order_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_order_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_order_basic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,16 +189,5 @@
       <updated>1761584998900</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_order_basic.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

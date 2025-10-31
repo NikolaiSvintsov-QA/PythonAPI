@@ -90,8 +90,18 @@ def test_create_order():
     """Со словаря data_patch_get достаёт значение по ключу "customerName"""
     patch_name = data_patch_get.get("customerName")
     assert patch_name == new_customer_name, "При частичном изменении данные не сохранились. "
-
     print(f"Получил новое имя : {patch_name} ")
+
+    """Работаем с методом DELETE"""
+    response_delete = requests.delete(url=f"{BASE_URL}/orders/{order_id}", headers=headers)
+    """Проверим, что запрос приходит 204"""
+    assert response_delete.status_code == 204, "Неверный статус код, при использовании метод 204"
+
+    response_delete_get = requests.get(url=f"{BASE_URL}/orders/{order_id}", headers=headers)
+    print(response_delete_get)
+    """Проверка, что прейдет статус код 404"""
+    assert response_delete_get.status_code == 404, "Ордер должен быть удален (404)"
+
 
 
 
