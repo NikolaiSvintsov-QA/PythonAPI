@@ -108,7 +108,9 @@ print("Name of new Customers", new_customer_name)
 response = requests.get(f"{BASE_URL}/orders/{order_id}",
                         headers=headers)
 
+delete_response = requests.delete(f"{BASE_URL}/orders/{order_id}", headers=headers)
 
+print("Deleted Code: ", response.status_code)
 
 
 
