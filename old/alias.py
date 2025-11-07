@@ -3,7 +3,7 @@ from faker import Faker
 from pydantic import BaseModel, Field
 from dataclasses import dataclass
 
-from typing_inspection.typing_objects import alias
+
 
 faker = Faker()
 

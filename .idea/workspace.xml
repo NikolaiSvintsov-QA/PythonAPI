@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99f3bab2-04d7-431a-acd1-1b954857ba61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/dataclasses/registered_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/generator/endpoints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/generator/generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/registered_modele.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_pydantic_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_registered.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/assetrions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/schema/registered_schema/request_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/schema/registered_schema/response_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/validate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_order_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_order_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson10_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/lesson10_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/old/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_order_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/test_order_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_alias.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/alias.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_allure.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/allure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_pydentic.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/pydentic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,48 +57,60 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="34erhcUGhwd2PrTXv92Jjllcmg7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_login.test_create_order.executor": "Run",
-    "Python tests.Python tests for test_login.test_login.executor": "Run",
-    "Python tests.Python tests for test_order_basic.test_create_order.executor": "Run",
-    "Python tests.Python tests for test_order_basic.test_login.executor": "Debug",
-    "Python tests.Python tests in test.py.executor": "Run",
-    "Python tests.Python tests in test_1.py.executor": "Run",
-    "Python tests.Python tests in test_alias.py.executor": "Run",
-    "Python tests.Python tests in test_allure.py.executor": "Run",
-    "Python tests.Python tests in test_fak.py.executor": "Run",
-    "Python tests.Python tests in test_logs.py.executor": "Run",
-    "Python tests.Python tests in test_order_basic.py.executor": "Run",
-    "Python tests.Python tests in test_orders.py.executor": "Run",
-    "Python tests.Python tests in test_pydentic.py.executor": "Run",
-    "Python tests.Python tests in test_requests.py.executor": "Run",
-    "Python.HW2.executor": "Run",
-    "Python.fergrt.executor": "Run",
-    "Python.hw_work_requests.executor": "Run",
-    "Python.lesson10_api.executor": "Run",
-    "Python.sdge.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/paur/PycharmProjects/pythonAPI",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for hw.order_simple.test_create_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for hw.order_simple.test_token.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for hw.test_order_basic.test_create_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.test_create_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_order_basic.test_create_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_order_basic.test_login.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_registered.TestRegistered.test_registered.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_1.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_alias.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_allure.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_fak.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_logs.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_order_basic.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_order_simple.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_orders.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_pydantic_base.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_pydentic.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_pydentic_basic.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_requests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fergrt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hw_work_requests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lesson10_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.order_simple.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sdge.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/paur/PycharmProjects/pythonAPI&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_order_basic.test_create_order">
-    <configuration name="lesson10_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_pydantic_base.py">
+    <configuration name="order_simple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,11 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_hw" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hw" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson10_api.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw/order_simple.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,80 +132,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_order_basic.test_create_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for hw.order_simple.test_create_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_order_basic.test_create_order&quot;" />
+      <option name="_new_target" value="&quot;hw.order_simple.test_create_order&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_order_basic.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for hw.order_simple.test_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_order_basic.test_login&quot;" />
+      <option name="_new_target" value="&quot;hw.order_simple.test_token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.test_login.test_create_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in order_simple.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_login.test_create_order&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/hw/order_simple.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_order_basic.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_pydantic_base.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_order_basic.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_pydantic_base.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_order_basic.test_create_order" />
-        <item itemvalue="Python tests.Python tests in test_order_basic.py" />
-        <item itemvalue="Python tests.Python tests for test_order_basic.test_login" />
-        <item itemvalue="Python.lesson10_api" />
-        <item itemvalue="Python tests.Python tests for test.test_login.test_create_order" />
+        <item itemvalue="Python tests.Python tests in test_pydantic_base.py" />
+        <item itemvalue="Python tests.Python tests for hw.order_simple.test_create_order" />
+        <item itemvalue="Python tests.Python tests for hw.order_simple.test_token" />
+        <item itemvalue="Python.order_simple" />
+        <item itemvalue="Python tests.Python tests in order_simple.py" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-af26db0dccfe-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.26775.22" />
+        <option value="bundled-python-sdk-f69e5c277ee4-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
