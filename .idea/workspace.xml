@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99f3bab2-04d7-431a-acd1-1b954857ba61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/dataclasses/registered_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/generator/endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/generator/generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/registered_modele.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_pydantic_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_registered.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/assetrions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schema/registered_schema/request_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schema/registered_schema/response_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/validate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson10_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/lesson10_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/old/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_order_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw/test_order_basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_alias.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/alias.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_allure.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/allure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/fake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/logs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_pydentic.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/pydentic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_pydantic_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_pydantic_base.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

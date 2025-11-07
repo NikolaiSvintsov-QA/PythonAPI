@@ -15,6 +15,14 @@ class OrderResponseSсhema(BaseModel):
     orderId: str
     created: bool
 
+"""Pydantic OrderSchema"""
+class OrderSchema(BaseModel):
+    id: str
+    bookId:int
+    customerName:str
+    quantity:int
+    timestamp:int
+
 def get_token()->str:
     """Собираем тело запроса"""
     body = {
@@ -51,7 +59,7 @@ def get_token()->str:
 
 
 """Создание ордера"""
-def create_order(token:str):
+def create_order(token:str)->str:
     headers = {
         "Authorization":f"Bearer {token}"
     }
@@ -77,7 +85,7 @@ def create_order(token:str):
 
 """Создаем функцию get_order - которая отправляет запрос по адресу GET /orders/{orderId}"""
 """В параметры  так же добавим (token и ордер) """
-def  get_order(token:str, order_id:str):
+def  get_order(token: str, order_id: str)-> dict:
     """Получение информации об ордере по ID"""
     # 1. Создаем заголовок для запроса
     headers = {
@@ -93,6 +101,20 @@ def  get_order(token:str, order_id:str):
     if response.status_code != 200:
         raise RuntimeError(f"Ошибка при получении ордера: {response.status_code} - {response.text}")
 
+    """Ловит все возможные ошибки по формирование ошибок"""
+    try:
+        data = response.json()
+        print(f"[DEBUG] Распарсенные данные: {data}")
+        validated = OrderSchema.model_validate(data)
+        print(f"[DEBUG] Validated: {validated}")
+        return validated.model_dump() ## ← возвращаем уже проверенный dict
+    except Exception as e:
+        print(f"[ERROR] Не удалось обработать ответ как JSON.")
+        print(f"[ERROR] Код: {response.status_code}")
+        print(f"[ERROR] Заголовки: {response.headers}")
+        print(f"[ERROR] Тело ответа (первые 200 символов): {response.text[:200]!r}")
+        print(f"[ERROR] Детали исключения: {type(e).__name__}-{e}")
+        raise # Пробрасываем ошибку дальше, чтобы не скрывать проблему
 
 
 
@@ -105,8 +127,10 @@ if __name__ == "__main__":
     print(f"Ордер успешно создан с orderId: {order_id} ")
 
     """Вызов функции get_order"""
-    order_data = get_order(token,order_id)
+    order_data = get_order(token , order_id)
     print(f"[DEBUG] Данные ордера: {order_data}")
+    assert str(order_data.get("id")) == str(order_id), f"id не совпал: {order_data}"
+
 
 
 
