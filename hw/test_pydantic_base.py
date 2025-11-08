@@ -116,6 +116,44 @@ def  get_order(token: str, order_id: str)-> dict:
         print(f"[ERROR] Детали исключения: {type(e).__name__}-{e}")
         raise # Пробрасываем ошибку дальше, чтобы не скрывать проблему
 
+"""Проверяем что наш сервер жив"""
+def get_status():
+    response_get_status = requests.get(url=f"{BASE_URL}/status")
+    response_body = response_get_status.json()
+    return response_body
+
+"""Создаю вспомогательную функцию  headers:с токеном чтоб каждый раз не прописывать"""
+def get_headers(token:str)-> dict:
+    return {"Authorization": f"Bearer {token}"}
+
+
+def patch_method(token: str, order_id: str, new_name: str) -> dict | None:
+
+    """
+    Частично обновляет заказ: меняет customerName у конкретного order_id.
+    Требует Bearer-токен (в headers_def или через token).
+    Возвращает JSON-ответ сервера (обычно короткое подтверждение).
+    """
+    headers = get_headers(token)
+    headers["Content-Type"] = "application/json" #добавляем еще один заголовок
+    url = f"{BASE_URL}/orders/{order_id}"
+    body = {"customerName": new_name}
+    response_patch = requests.patch(url, headers=headers, json=body)
+    print(f"[DEBUG] Status: {response_patch.status_code}")
+    print(f"[DEBUG] Body: {response_patch.text}")
+    if response_patch.status_code not in (200, 204):
+        raise RuntimeError(
+            f"Ошибка при обновлении ордера: "
+            f"{response_patch.status_code} - {response_patch.text}"
+        )
+        # Если 204 — тела нет. Если 200 — вернём JSON.
+    if response_patch.status_code == 204 or not response_patch.text.strip():
+        return None
+    return response_patch.json()
+
+
+
+
 
 
 """ Блок, который выполняется только при прямом запуске файла"""
@@ -130,6 +168,22 @@ if __name__ == "__main__":
     order_data = get_order(token , order_id)
     print(f"[DEBUG] Данные ордера: {order_data}")
     assert str(order_data.get("id")) == str(order_id), f"id не совпал: {order_data}"
+
+    """Получаем код что сервер живой"""
+    get_body = get_status()
+    print(f"[DEBUG] Получает ответ от сервера : {get_body}")
+
+    headers_def = get_headers(token)
+    print(f"[DEBUG] Headers вынесен в функцию и он такой : {headers_def}")
+
+    patch_resp = patch_method(token, order_id, "QA Renamed")
+    print("[DEBUG] PATCH resp:", patch_resp)
+
+    # 3) Подтверждаем, что имя реально поменялось
+    order_after = get_order(token, order_id)
+    print("[DEBUG] After PATCH:", order_after)
+    assert order_after["customerName"] == "QA Renamed", "Имя не обновилось"
+
 
 
 
