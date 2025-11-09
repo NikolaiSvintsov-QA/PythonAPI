@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99f3bab2-04d7-431a-acd1-1b954857ba61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dataclasses/registered_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/generator/generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/base_module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/registered_module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_registered.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/assertions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schemas/registered_shema/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schemas/registered_shema/request_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schemas/registered_shema/response_shema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/vallidate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/base_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/base_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_registered.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_registered.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +59,13 @@
     "Python tests.Python tests for test_order_basic.test_create_order.executor": "Run",
     "Python tests.Python tests for test_order_basic.test_login.executor": "Debug",
     "Python tests.Python tests for test_registered.TestRegistered.test_registered.executor": "Run",
+    "Python tests.Python tests for tests.test.test.executor": "Run",
     "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered.executor": "Run",
+    "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_1.executor": "Run",
+    "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_2.executor": "Run",
+    "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_3.executor": "Run",
+    "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_v3.executor": "Run",
+    "Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_v4.executor": "Run",
     "Python tests.Python tests in test.py.executor": "Run",
     "Python tests.Python tests in test_1.py.executor": "Run",
     "Python tests.Python tests in test_alias.py.executor": "Run",
@@ -110,30 +106,8 @@
       <recent name="$PROJECT_DIR$/hw" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered">
-    <configuration name="order_simple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonAPI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hw" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw/order_simple.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for hw.order_simple.test_create_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_v4">
+    <configuration name="Python tests for tests.test_registered.TestRegistered.test_registered_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,11 +118,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;hw.order_simple.test_create_order&quot;" />
+      <option name="_new_target" value="&quot;tests.test_registered.TestRegistered.test_registered_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for hw.order_simple.test_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_registered.TestRegistered.test_registered_v3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,11 +133,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;hw.order_simple.test_token&quot;" />
+      <option name="_new_target" value="&quot;tests.test_registered.TestRegistered.test_registered_v3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_registered.TestRegistered.test_registered" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_registered.TestRegistered.test_registered_v4" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,11 +148,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_registered.TestRegistered.test_registered&quot;" />
+      <option name="_new_target" value="&quot;tests.test_registered.TestRegistered.test_registered_v4&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_pydantic_base.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,17 +163,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/hw/test_pydantic_base.py&quot;" />
+      <option name="_new_target" value="&quot;tests.test.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered" />
-        <item itemvalue="Python tests.Python tests in test_pydantic_base.py" />
-        <item itemvalue="Python tests.Python tests for hw.order_simple.test_create_order" />
-        <item itemvalue="Python tests.Python tests for hw.order_simple.test_token" />
-        <item itemvalue="Python.order_simple" />
+        <item itemvalue="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_v4" />
+        <item itemvalue="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_v3" />
+        <item itemvalue="Python tests.Python tests for tests.test_registered.TestRegistered.test_registered_3" />
+        <item itemvalue="Python tests.Python tests for tests.test.test" />
+        <item itemvalue="Python tests.Python tests in test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -220,5 +209,16 @@
       <updated>1761584998900</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

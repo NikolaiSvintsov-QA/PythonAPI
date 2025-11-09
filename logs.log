@@ -2,3 +2,24 @@
 2025-11-08 | INFO | assert_status_code успешно выполнена с результатом: None
 2025-11-08 | INFO | validate успешно выполнена с результатом: None
 2025-11-08 | INFO | assert_status_code успешно выполнена с результатом: None
+2025-11-09 | ERROR | Ошибка в create_request_body : 'builtin_function_or_method' object is not iterable
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Joseph Clark","clientEmail":"uunderwood@example.org"}
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Alex Sampson","clientEmail":"timothy42@example.org"}
+2025-11-09 | INFO | validate успешно выполнена с результатом: None
+2025-11-09 | INFO | assert_status_code успешно выполнена с результатом: None
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Andrew Brown","clientEmail":"youngaaron@example.net"}
+2025-11-09 | ERROR | Ошибка в create_url : BaseModule.create_url() missing 1 required positional argument: 'endpoint'
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"William Terry","clientEmail":"erin71@example.net"}
+2025-11-09 | INFO | create_url успешно выполнена с результатом: https://simple-books-api.click/api-clients/
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Thomas Richard","clientEmail":"juangarcia@example.net"}
+2025-11-09 | INFO | create_url успешно выполнена с результатом: https://simple-books-api.click/api-clients/?to_date=2025-11-02
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Taylor Roberts","clientEmail":"ruthyoung@example.org"}
+2025-11-09 | INFO | create_url успешно выполнена с результатом: https://simple-books-api.click/api-clients/
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Jill Clark","clientEmail":"wtrujillo@example.com"}
+2025-11-09 | INFO | create_url успешно выполнена с результатом: https://simple-books-api.click/api-clients/
+2025-11-09 | INFO | validate успешно выполнена с результатом: None
+2025-11-09 | INFO | assert_status_code успешно выполнена с результатом: None
+2025-11-09 | INFO | create_request_body успешно выполнена с результатом: {"clientName":"Kimberly White","clientEmail":"phamcristina@example.org"}
+2025-11-09 | INFO | create_url успешно выполнена с результатом: https://simple-books-api.click/api-clients/
+2025-11-09 | INFO | validate успешно выполнена с результатом: None
+2025-11-09 | INFO | assert_status_code успешно выполнена с результатом: None
